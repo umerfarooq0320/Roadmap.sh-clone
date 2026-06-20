@@ -153,12 +153,145 @@ nav a i {
     background: rgba(255,255,255,0.03);
 }
 
-/* Bottom Divider */
-.hero::after {
+/* ROADMAP SECTION */
+
+.roadmaps-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.divider {
+    position: relative;
+    text-align: center;
+    margin: 80px 0 40px;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.divider::before {
     content: "";
     position: absolute;
+    top: 50%;
     left: 0;
-    right: 0;
-    bottom: 35px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    width: 100%;
+    height: 1px;
+    background: rgba(255,255,255,0.08);
+    z-index: 1;
+}
+.section-pill {
+    position: relative;
+    z-index: 2;
+
+    display: inline-block;
+    padding: 10px 16px;
+
+    background: #07112d; 
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+
+    color: #b8c0d4;
+    font-size: 14px;
+}
+.bottom-pill {
+    margin-top: 30px;
+}
+
+.roadmap-grid {
+    width: fit-content;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+
+    justify-content: center;
+}
+
+.roadmap-card {
+    width: 195px;
+    height: 40px;
+
+    background: #0a1738;
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 12px;
+
+    color: #cbd5e1;
+    font-size: 14px;
+
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.roadmap-card:hover {
+    border-color: rgba(86,140,255,0.8);
+    background: #10204d;
+    transform: translateY(-2px);
+}
+
+.roadmap-card i {
+    color: rgba(255,255,255,0.25);
+    font-size: 12px;
+}
+
+.create-roadmap {
+    border-style: dashed;
+    justify-content: center;
+    color: #d9e4ff;
+}
+
+.create-roadmap:hover {
+    background: #10204d;
+}
+
+.new-card {
+    position: relative;
+}
+
+.new-badge {
+    position: absolute;
+    right: 10px;
+    bottom: 4px;
+
+    font-size: 10px;
+    color: #c084fc;
+}
+
+.new-badge::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background: #a855f7;
+    border-radius: 50%;
+
+    display: inline-block;
+    margin-right: 4px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .roadmap-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .roadmap-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .roadmap-card {
+        width: 100%;
+    }
 }
