@@ -206,29 +206,23 @@ nav a i {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    gap: 12px;
 
     justify-content: center;
 }
 
 .roadmap-card {
-    width: 195px;
-    height: 40px;
-
+    width: 210px;
+    height: 50px;
     background: #0a1738;
     border: 1px solid rgba(255,255,255,0.08);
-
     border-radius: 8px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0 12px;
-
     color: #cbd5e1;
     font-size: 14px;
-
     cursor: pointer;
     transition: all 0.25s ease;
 }
