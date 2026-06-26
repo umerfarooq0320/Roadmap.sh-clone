@@ -11,9 +11,7 @@ body {
     color: #ffffff;
     background: #0f172a;
 }
-
 /* Header */
-
 .site-header {
     background: #0f172a;
     padding: 14px 0;
@@ -22,16 +20,12 @@ body {
 .navbar .container {
     max-width: 1200px;
 }
-
 /* Logo */
-
 .navbar-brand svg {
     width: 30px;
     height: 30px;
     display: block;
 }
-
-/* Nav Buttons */
 
 .nav-menu-btn,
 .nav-text-btn {
@@ -64,28 +58,22 @@ body {
     outline: none;
     box-shadow: none;
 }
-
 /* Custom Main Dropdown */
-
 .custom-dropdown-wrapper {
     position: relative;
 }
-
 .main-dropdown {
     position: absolute;
     top: 48px;
     left: 0;
     width: 385px;
-
     background: #1e293b;
     border-radius: 10px;
     padding: 20px;
-
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
     pointer-events: none;
-
     z-index: 999;
     transition: 0.2s ease;
 }
@@ -110,14 +98,11 @@ body {
     width: 48px;
     height: 48px;
     min-width: 48px;
-
     border-radius: 50%;
     background: #64748b;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     color: #ffffff;
     font-size: 23px;
 }
@@ -140,35 +125,26 @@ body {
 .main-dropdown-item small {
     background: #facc15;
     color: #000000;
-
     font-size: 12px;
     font-weight: 800;
-
     padding: 3px 8px;
     border-radius: 999px;
     margin-left: 5px;
 }
-
-/* Upgrade */
 
 .upgrade-link {
     color: #facc15;
     text-decoration: none;
     font-size: 15px;
     font-weight: 700;
-
     display: flex;
     align-items: center;
     gap: 6px;
-
     transition: 0.2s ease;
 }
-
 .upgrade-link:hover {
     color: #fde047;
 }
-
-/* Right Links */
 
 .login-link {
     color: #9ca3af;
@@ -185,20 +161,15 @@ body {
 .signup-btn {
     width: 112px;
     height: 32px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     background: linear-gradient(to right, #3b82f6, #1d4ed8);
     color: #ffffff;
-
     border-radius: 999px;
     text-decoration: none;
-
     font-size: 14px;
     font-weight: 600;
-
     transition: 0.2s ease;
 }
 
@@ -208,16 +179,13 @@ body {
 }
 
 /* Bootstrap Dropdown */
-
 .dropdown-menu.custom-menu {
     min-width: 230px;
     margin-top: 14px;
     padding: 10px;
-
     background: #1e293b;
     border: 1px solid rgba(148, 163, 184, 0.15);
     border-radius: 14px;
-
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
@@ -228,10 +196,8 @@ body {
 .menu-item {
     color: #cbd5e1;
     font-size: 15px;
-
     padding: 10px 12px;
     border-radius: 10px;
-
     transition: 0.2s ease;
 }
 
@@ -246,7 +212,6 @@ body {
 }
 
 /* Mobile */
-
 .mobile-menu-btn {
     background: transparent;
     border: 0;
@@ -267,10 +232,8 @@ body {
     display: block;
     color: #cbd5e1;
     text-decoration: none;
-
     padding: 10px 0;
     font-size: 15px;
-
     border-bottom: 1px solid rgba(148, 163, 184, 0.12);
 }
 
@@ -282,33 +245,24 @@ body {
     margin-top: 12px;
     width: 100%;
     height: 38px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     background: linear-gradient(to right, #3b82f6, #1d4ed8);
     color: #ffffff;
-
     border-radius: 999px;
     text-decoration: none;
-
     font-size: 14px;
     font-weight: 600;
 }
-
 /* Main */
-
 .main-area {
     background: #0f172a;
 }
-
 /* Hero */
-
 .hero-section {
     min-height: 430px;
     border-bottom: 1px solid #1e293c;
-
     display: flex;
     align-items: center;
 }
@@ -320,11 +274,9 @@ body {
 
 .hero-title {
     margin-bottom: 20px;
-
     font-size: 64px;
     line-height: 1.15;
     font-weight: 800;
-
     background: linear-gradient(to bottom, #fffbeb, #a855f7);
     -webkit-background-clip: text;
     background-clip: text;
@@ -334,7 +286,6 @@ body {
 .hero-description {
     max-width: 980px;
     margin: 0 auto;
-
     color: #9ca3af;
     font-size: 22px;
     line-height: 1.75;
@@ -346,60 +297,48 @@ body {
 }
 
 /* Roadmap Section */
-
 .roadmap-section {
-     position: relative;
+    position: relative;
     background: #0f172a;
     border-top: 1px solid #1e293c;
     padding-top: 1px;
     overflow: visible;
 }
 
-
 .section-label {
-     position: absolute;
+    position: absolute;
     top: -21px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
-
     padding: 7px 18px;
-
     background: #111827;
     border: 1px solid #1e293c;
     border-radius: 10px;
-
     color: #93a4bd;
     font-size: 20px;
     white-space: nowrap;
 }
 
 /* Roadmap Cards */
-
 .roadmap-container {
-    
     max-width: 960px;
     padding-top: 70px;
     padding-bottom: 48px;
 }
 
-
 .roadmap-card {
     height: 64px;
     padding: 0 16px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     background: #111827;
     border: 1px solid #25314c;
     border-radius: 8px;
-
     color: #8b9bb4;
     text-decoration: none;
     font-size: 18px;
-
     transition: 0.25s ease;
 }
 
@@ -413,30 +352,34 @@ body {
     color: #64748b;
     font-size: 16px;
 }
-/* Disabled Card */
 
+/* Disabled Card */
 .roadmap-disabled {
     color: #8b9bb4;
     justify-content: flex-start;
     gap: 8px;
     overflow: hidden;
 }
+
 .disabled-title {
     white-space: nowrap;
-     font-size: 17px;
+    font-size: 17px;
 }
+
 .roadmap-disabled:hover {
     background: #111827;
     border-color: #25314c;
     color: #8b9bb4;
 }
-.roadmap-title{
-    display:flex;
-    align-items:flex-start;
-    gap:6px;
+
+.roadmap-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
 }
-.roadmap-title span:first-child{
-    white-space:nowrap;
+
+.roadmap-title span:first-child {
+    white-space: nowrap;
 }
 
 .new-badge {
@@ -456,33 +399,32 @@ body {
     border-radius: 50%;
     background: #a855f7;
 }
+
 .roadmap-create {
     justify-content: center;
     background: transparent;
     border: 1px dashed #334155;
     color: #cbd5e1;
 }
+
 .roadmap-create:hover {
     background: rgba(30, 41, 59, 0.35);
     border-color: #64748b;
     color: #ffffff;
 }
-/* Animation */
 
+/* Animation */
 @keyframes dropdownFade {
     from {
         opacity: 0;
         transform: translateY(8px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-
 /* Mobile */
-
 @media (max-width: 575px) {
     .hero-section {
         min-height: 192px;
@@ -531,22 +473,18 @@ body {
     }
 }
 /* Roadmaps Custom Dropdown */
-
 .roadmap-dropdown {
     position: absolute;
     top: 48px;
     left: 0;
     width: 385px;
-
     background: #1e293b;
     border-radius: 8px;
     padding: 8px;
-
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
     pointer-events: none;
-
     z-index: 999;
     transition: 0.2s ease;
 }
@@ -562,10 +500,8 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
-
     padding: 14px 12px;
     border-radius: 6px;
-
     text-decoration: none;
     transition: 0.2s ease;
 }
@@ -579,21 +515,17 @@ body {
     width: 50px;
     height: 50px;
     min-width: 50px;
-
     border-radius: 50%;
     background: #64748b;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     color: #ffffff;
     font-size: 24px;
 }
 
 .roadmap-dropdown-item strong {
     display: block;
-
     color: #ffffff;
     font-size: 18px;
     font-weight: 700;
@@ -602,26 +534,23 @@ body {
 
 .roadmap-dropdown-item p {
     margin: 4px 0 0;
-
     color: #cbd5e1;
     font-size: 16px;
     line-height: 1.3;
 }
+
 .ai-dropdown {
     position: absolute;
     top: 48px;
     left: 0;
     width: 385px;
-
     background: #1e293b;
     border-radius: 8px;
     padding: 16px;
-
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
     pointer-events: none;
-
     z-index: 999;
     transition: 0.2s ease;
 }
@@ -637,7 +566,6 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
-
     padding: 10px 0;
     text-decoration: none;
 }
@@ -656,8 +584,8 @@ body {
     font-size: 16px;
     line-height: 1.3;
 }
-/* Guides Section */
 
+/* Guides Section */
 .guides-section {
     background: #f3f4f6;
     color: #111827;
@@ -665,9 +593,10 @@ body {
 }
 
 .guides-container {
-       max-width: 960px;
+    max-width: 960px;
     width: calc(100% - 40px);
-    margin: 0 auto;}
+    margin: 0 auto;
+}
 
 .guides-title {
     font-size: 42px;
@@ -684,10 +613,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 12px 0;
     border-bottom: 1px solid #d1d5db;
-
     text-decoration: none;
     color: #4b5563;
 }
@@ -696,7 +623,6 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-
     font-size: 16px;
     transition: 0.2s ease;
 }
@@ -709,10 +635,8 @@ body {
 .guide-badge {
     background: #86efac;
     color: #065f46;
-
     padding: 3px 7px;
     border-radius: 3px;
-
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
@@ -723,20 +647,20 @@ body {
     font-size: 12px;
     text-transform: capitalize;
 }
-.guides-footer {
-   margin-top:18px;
-    padding-bottom:40px;
-    border-bottom:1px solid #e5e7eb;
 
-    display:flex;
-    justify-content:flex-start;
+.guides-footer {
+    margin-top: 18px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .view-guides-btn {
     display: inline-flex;
     align-items: center;
     /* justify-content: center; */
-      margin-left:160px;
+    margin-left: 160px;
     gap: 8px;
     height: 42px;
     padding: 0 18px;
@@ -761,6 +685,7 @@ body {
 .view-guides-btn:hover span {
     transform: translateX(3px);
 }
+
 .maintained-section {
     background: #ffffff;
     color: #000000;
@@ -769,10 +694,11 @@ body {
 }
 
 .maintained-container {
-      max-width: 760px;
+    max-width: 760px;
     margin: 0 auto;
     padding: 0 20px;
-    text-align: center;}
+    text-align: center;
+}
 
 .maintained-title {
     font-size: 48px;
@@ -799,13 +725,14 @@ body {
 }
 
 .timeline-line {
-   position:absolute;
-    top:0;
-    bottom:0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
 
-    left:135px;
-    width:2px;
-    background:#d1d5db;}
+    left: 135px;
+    width: 2px;
+    background: #d1d5db;
+}
 
 .timeline-list {
     list-style: none;
@@ -814,7 +741,7 @@ body {
 }
 
 .timeline-item {
-      display: grid;
+    display: grid;
     grid-template-columns: 130px 28px 1fr;
     align-items: center;
     margin-bottom: 16px;
@@ -829,13 +756,13 @@ body {
 }
 
 .timeline-dot {
-       width:12px;
-    height:12px;
-    border-radius:50%;
-    background:#d1d5db;
-    position:relative;
-    left: 5px;;       
-    z-index:2;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #d1d5db;
+    position: relative;
+    /* left: 5px;        */
+    z-index: 2;
 
 }
 
@@ -859,14 +786,11 @@ body {
 .notify-btn {
     height: 42px;
     padding: 0 22px;
-
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
-
     border-radius: 999px;
-
     font-size: 16px;
     text-decoration: none;
     transition: .2s ease;
@@ -933,6 +857,7 @@ body {
         align-items: stretch;
     }
 }
+
 .community-section {
     background: #ffffff;
     color: #000000;
@@ -1009,14 +934,11 @@ body {
 .stat-btn {
     height: 56px;
     padding: 8px 12px;
-
     display: inline-flex;
     align-items: center;
     gap: 8px;
-
     border: 1px solid #000;
     border-radius: 7px;
-
     color: #000;
     text-decoration: none;
     background: #fff;
@@ -1072,6 +994,7 @@ body {
         border-bottom: none;
     }
 }
+
 .site-footer {
     background: #020817;
     color: #94a3b8;
@@ -1122,11 +1045,9 @@ body {
     background: #ffffff;
     color: #000000;
     border-radius: 6px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-weight: 800;
 }
 
@@ -1138,10 +1059,8 @@ body {
     background: #2563eb;
     color: #ffffff;
     text-decoration: none;
-
     padding: 5px 8px;
     border-radius: 6px;
-
     font-size: 13px;
 }
 
@@ -1154,12 +1073,10 @@ body {
 
 .footer-links {
     margin-top: 20px;
-
     display: flex;
     align-items: center;
     gap: 8px;
     flex-wrap: wrap;
-
     font-size: 14px;
 }
 
@@ -1176,15 +1093,11 @@ body {
 
 .cookie-btn {
     margin-top: 50px;
-
     background: #1e293b;
     color: #cbd5e1;
-
     border: 0;
     border-radius: 6px;
-
     padding: 9px 14px;
-
     font-size: 14px;
 }
 
@@ -1213,7 +1126,6 @@ body {
     margin-top: 22px;
     color: #cbd5e1;
     font-size: 14px;
-
     display: flex;
     justify-content: center;
     gap: 7px;
