@@ -396,7 +396,7 @@ body {
     border: 1px solid #25314c;
     border-radius: 8px;
 
-    color: #93c5fd;
+    color: #8b9bb4;
     text-decoration: none;
     font-size: 18px;
 
@@ -416,23 +416,51 @@ body {
 /* Disabled Card */
 
 .roadmap-disabled {
-    color: #7b879b;
+    color: #8b9bb4;
+    justify-content: flex-start;
+    gap: 8px;
+    overflow: hidden;
 }
-.new-badge .dot {
-    display: inline-block;
+.disabled-title {
+    white-space: nowrap;
+     font-size: 17px;
+}
+.roadmap-disabled:hover {
+    background: #111827;
+    border-color: #25314c;
+    color: #8b9bb4;
+}
+.roadmap-title{
+    display:flex;
+    align-items:flex-start;
+    gap:6px;
+}
+.roadmap-title span:first-child{
+    white-space:nowrap;
+}
+
+.new-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #d946ef;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 14px;
+    white-space: nowrap;
+}
+
+.dot {
     width: 10px;
     height: 10px;
-    background: #a855f7;
     border-radius: 50%;
-    margin-right: 4px;
+    background: #a855f7;
 }
 .roadmap-create {
-        justify-content: center;
-    align-items: center;
-   box-shadow: inset 0 0 0 1px rgba(148,163,184,.08);
-    background: transparent;      /* Important */
+    justify-content: center;
+    background: transparent;
     border: 1px dashed #334155;
-
+    color: #cbd5e1;
 }
 .roadmap-create:hover {
     background: rgba(30, 41, 59, 0.35);
