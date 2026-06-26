@@ -4,517 +4,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Roadmaps</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<script src="script.js"></script>
-<body>
-<div class="dark-wrapper">
-    <header>
-        <div class="logo-section">
-            <div class="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 283 283">
-                    <path fill="#fff"
-                        d="M0 39C0 17.46 17.46 0 39 0h205c21.539 0 39 17.46 39 39v205c0 21.539-17.461 39-39 39H39c-21.54 0-39-17.461-39-39V39Z" />
-                    <path
-                        d="M121.215 210.72c-1.867.56-4.854 1.12-8.96 1.68-3.92.56-8.027.84-12.32.84-4.107 0-7.84-.28-11.2-.84-3.174-.56-5.88-1.68-8.12-3.36s-4.014-3.92-5.32-6.72c-1.12-2.987-1.68-6.813-1.68-11.48v-84c0-4.293.746-7.933 2.24-10.92 1.68-3.173 4.013-5.973 7-8.4s6.626-4.573 10.92-6.44c4.48-2.053 9.24-3.827 14.28-5.32a106.176 106.176 0 0 1 15.68-3.36 95.412 95.412 0 0 1 16.24-1.4c8.96 0 16.053 1.773 21.28 5.32 5.226 3.36 7.84 8.96 7.84 16.8 0 2.613-.374 5.227-1.12 7.84-.747 2.427-1.68 4.667-2.8 6.72a133.1 133.1 0 0 0-12.04.56c-4.107.373-8.12.933-12.04 1.68s-7.654 1.587-11.2 2.52c-3.36.747-6.254 1.68-8.68 2.8v95.48zm45.172-22.4c0-7.84 2.426-14.373 7.28-19.6s11.48-7.84 19.88-7.84 15.026 2.613 19.88 7.84 7.28 11.76 7.28 19.6-2.427 14.373-7.28 19.6-11.48 7.84-19.88 7.84-15.027-2.613-19.88-7.84-7.28-11.76-7.28-19.6z" />
-                </svg>
-            </div>
-<div class="menu-container">
-    <div class="menu-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
 
-    <div class="dropdown-menu" id="dropdownMenu">
-        <a href="#">Lesson Packs</a>
-        <a href="#">SQL Course</a>
-        <a href="#">Get Started</a>
-        <a href="#">Projects</a>
-        <a href="#">Guides</a>
-        <a href="#">Teams</a>
-        <a href="#">Advertise</a>
+    <title>Roadmap Clone</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="site-header">
+    <nav class="navbar navbar-expand-sm navbar-dark py-4">
+        <div class="container">
+
+            <!-- Left Side -->
+            <div class="d-flex align-items-center gap-4">
+
+                <!-- Logo -->
+                <a class="navbar-brand p-0 m-0" href="#" aria-label="Roadmap Logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 283 283" fill="#000">
+                        <path fill="#fff"
+                            d="M0 39C0 17.46 17.46 0 39 0h205c21.539 0 39 17.46 39 39v205c0 21.539-17.461 39-39 39H39c-21.54 0-39-17.461-39-39V39Z">
+                        </path>
+                        <path
+                            d="M121.215 210.72c-1.867.56-4.854 1.12-8.96 1.68-3.92.56-8.027.84-12.32.84-4.107 0-7.84-.28-11.2-.84-3.174-.56-5.88-1.68-8.12-3.36s-4.014-3.92-5.32-6.72c-1.12-2.987-1.68-6.813-1.68-11.48v-84c0-4.293.746-7.933 2.24-10.92 1.68-3.173 4.013-5.973 7-8.4s6.626-4.573 10.92-6.44c4.48-2.053 9.24-3.827 14.28-5.32a106.176 106.176 0 0 1 15.68-3.36 95.412 95.412 0 0 1 16.24-1.4c8.96 0 16.053 1.773 21.28 5.32 5.226 3.36 7.84 8.96 7.84 16.8 0 2.613-.374 5.227-1.12 7.84-.747 2.427-1.68 4.667-2.8 6.72a133.1 133.1 0 0 0-12.04.56c-4.107.373-8.12.933-12.04 1.68s-7.654 1.587-11.2 2.52c-3.36.747-6.254 1.68-8.68 2.8v95.48zm45.172-22.4c0-7.84 2.426-14.373 7.28-19.6s11.48-7.84 19.88-7.84 15.026 2.613 19.88 7.84 7.28 11.76 7.28 19.6-2.427 14.373-7.28 19.6-11.48 7.84-19.88 7.84-15.027-2.613-19.88-7.84-7.28-11.76-7.28-19.6z">
+                        </path>
+                    </svg>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="d-none d-sm-flex align-items-center gap-4">
+
+                    <!-- Hamburger Dropdown -->
+                    <div class="custom-dropdown-wrapper">
+    <button class="nav-menu-btn" id="mainMenuBtn" type="button">
+        <i class="bi bi-list"></i>
+    </button>
+
+    <div class="main-dropdown" id="mainDropdown">
+
+        <a href="#" class="main-dropdown-item">
+            <span class="dropdown-icon"><i class="bi bi-layers"></i></span>
+            <span>
+                <strong>Lesson Packs <small>NEW</small></strong>
+                <p>Visual lessons on roadmap topics</p>
+            </span>
+        </a>
+
+        <a href="#" class="main-dropdown-item">
+            <span class="dropdown-icon"><i class="bi bi-database"></i></span>
+            <span>
+                <strong>SQL Course</strong>
+                <p>Our premium SQL course</p>
+            </span>
+        </a>
+
+        <a href="#" class="main-dropdown-item">
+            <span class="dropdown-icon"><i class="bi bi-arrow-right"></i></span>
+            <span>
+                <strong>Get Started</strong>
+                <p>Pick a path and get started</p>
+            </span>
+        </a>
+
+        <a href="#" class="main-dropdown-item">
+            <span class="dropdown-icon"><i class="bi bi-kanban"></i></span>
+            <span>
+                <strong>Projects</strong>
+                <p>Skill-up with real-world projects</p>
+            </span>
+        </a>
+
+        <a href="#" class="main-dropdown-item">
+            <span class="dropdown-icon"><i class="bi bi-book"></i></span>
+            <span>
+                <strong>Guides</strong>
+                <p>In-depth articles and tutorials</p>
+            </span>
+        </a>
+
+        <a href="#" class="main-dropdown-item">
+            <span class="dropdown-icon"><i class="bi bi-people"></i></span>
+            <span>
+                <strong>Teams</strong>
+                <p>Collaborate with your team</p>
+            </span>
+        </a>
+
+        <a href="#" class="main-dropdown-item">
+            <span class="dropdown-icon"><i class="bi bi-list"></i></span>
+            <span>
+                <strong>Advertise</strong>
+                <p>Promote your product or service</p>
+            </span>
+        </a>
+
     </div>
 </div>
-            <div class="menu-icon">
-                <i class="right section"></i>
+
+                    <!-- Roadmaps Dropdown -->
+                   <div class="custom-dropdown-wrapper">
+    <button class="nav-text-btn" id="roadmapMenuBtn" type="button">
+        Roadmaps <i class="bi bi-chevron-down small"></i>
+    </button>
+
+    <div class="roadmap-dropdown" id="roadmapDropdown">
+
+        <a href="#" class="roadmap-dropdown-item active">
+            <span class="dropdown-icon"><i class="bi bi-map"></i></span>
+            <span>
+                <strong>Official Roadmaps</strong>
+                <p>Made by subject matter experts</p>
+            </span>
+        </a>
+
+        <a href="#" class="roadmap-dropdown-item">
+            <span class="dropdown-icon"><i class="bi bi-stars"></i></span>
+            <span>
+                <strong>AI Roadmaps</strong>
+                <p>Generate roadmaps with AI</p>
+            </span>
+        </a>
+
+        <a href="#" class="roadmap-dropdown-item">
+            <span class="dropdown-icon"><i class="bi bi-globe"></i></span>
+            <span>
+                <strong>Community Roadmaps</strong>
+                <p>Made by community members</p>
+            </span>
+        </a>
+
+    </div>
+</div>
+
+                    <!-- AI Tutor Dropdown -->
+                    <div class="custom-dropdown-wrapper">
+    <button class="nav-text-btn" id="aiTutorMenuBtn" type="button">
+        AI Tutor <i class="bi bi-chevron-down small"></i>
+    </button>
+
+    <div class="ai-dropdown" id="aiTutorDropdown">
+
+        <a href="#" class="ai-dropdown-item">
+            <span class="dropdown-icon"><i class="bi bi-plus-lg"></i></span>
+            <span>
+                <strong>Create with AI</strong>
+                <p>Learn something new with AI</p>
+            </span>
+        </a>
+
+        <a href="#" class="ai-dropdown-item">
+            <span class="dropdown-icon"><i class="bi bi-tools"></i></span>
+            <span>
+                <strong>Test my Skills</strong>
+                <p>Test your skills with AI</p>
+            </span>
+        </a>
+
+        <a href="#" class="ai-dropdown-item">
+            <span class="dropdown-icon"><i class="bi bi-chat"></i></span>
+            <span>
+                <strong>Ask AI Tutor</strong>
+                <p>Career, resume guidance, and more</p>
+            </span>
+        </a>
+
+        <a href="#" class="ai-dropdown-item">
+            <span class="dropdown-icon"><i class="bi bi-map"></i></span>
+            <span>
+                <strong>Roadmap Chat</strong>
+                <p>Chat with AI Tutor about a roadmap</p>
+            </span>
+        </a>
+
+    </div>
+</div>
+
+                    <!-- Upgrade -->
+                    <a href="#" class="upgrade-link">
+                        <i class="bi bi-lightning-charge-fill"></i>
+                        Upgrade to Pro
+                    </a>
+
+                </div>
             </div>
 
-            <nav>
-                <a href="#">Roadmaps <i class="fa-solid fa-chevron-down"></i></a>
-                <a href="#">AI Tutor <i class="fa-solid fa-chevron-down"></i></a>
-                <a href="#" class="pro">
-                    <i class="fa-solid fa-bolt"></i>
-                    Upgrade to Pro
-                </a>
-            </nav>
+            <!-- Right Side Desktop -->
+            <div class="d-none d-sm-flex align-items-center gap-3">
+                <a href="#" class="login-link">Login</a>
+                <a href="#" class="signup-btn">Sign Up</a>
+            </div>
+
+            <!-- Mobile Button -->
+            <button class="mobile-menu-btn d-sm-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+                <i class="bi bi-list"></i>
+            </button>
+
         </div>
+    </nav>
 
-        <div class="left-section">
-            <a href="#">Login</a>
-            <button>Sign Up</button>
+    <!-- Mobile Menu -->
+    <div class="collapse d-sm-none" id="mobileMenu">
+        <div class="container pb-3">
+            <a href="#" class="mobile-link">AI Tutor</a>
+            <a href="#" class="mobile-link">Roadmaps</a>
+            <a href="#" class="mobile-link">Upgrade to Pro</a>
+            <a href="#" class="mobile-link">Login</a>
+            <a href="#" class="mobile-signup-btn">Sign Up</a>
         </div>
-    </header>
+    </div>
+</header>
+<main class="main-area">
 
-    <section class="hero">
-        <h1>Developer Roadmaps</h1>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-container text-center">
+            <h1 class="hero-title">Developer Roadmaps</h1>
 
-        <p>
-            <strong>roadmap.sh</strong> is a community effort to create roadmaps,
-            guides and other educational content to help guide developers in
-            picking up a path and guide their learnings.
-        </p>
+            <p class="hero-description d-none d-sm-block">
+                <strong>roadmap.sh</strong> is a community effort to create roadmaps,
+                guides and other educational content to help guide developers in picking
+                up a path and guide their learnings.
+            </p>
 
-        <!-- <div class="roadmap-btn">
+            <p class="hero-description-mobile d-block d-sm-none">
+                Community created roadmaps, guides and articles to help developers grow in their career.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Label -->
+    <section class="roadmap-section">
+        <div class="section-label">
             Role-based Roadmaps
-        </div> -->
-    </section>
-    
-    <section class="roadmaps-section">
-
-        <div class="divider">
-            <span class="section-pill">Role-based Roadmaps</span>
-        </div>
-
-        <div class="roadmap-grid">
-
-            <!-- Column 1 -->
-            <div class="roadmap-card">Frontend <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Backend <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Full Stack <i class="fa-regular fa-bookmark"></i></div>
-
-            <div class="roadmap-card">DevOps <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">DevSecOps <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Data Analyst <i class="fa-regular fa-bookmark"></i></div>
-
-            <div class="roadmap-card">AI Engineer <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">AI and Data Scientist <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Data Engineer <i class="fa-regular fa-bookmark"></i></div>
-
-            <div class="roadmap-card">Android <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Machine Learning <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">PostgreSQL <i class="fa-regular fa-bookmark"></i></div>
-
-            <div class="roadmap-card">iOS <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Blockchain <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">QA <i class="fa-regular fa-bookmark"></i></div>
-
-            <div class="roadmap-card">Software Architect <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Cyber Security <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">UX Design <i class="fa-regular fa-bookmark"></i></div>
-
-            <div class="roadmap-card">Technical Writer <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Game Developer <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Server Side Game Developer <i class="fa-regular fa-bookmark"></i></div>
-
-            <div class="roadmap-card">MLOps <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Product Manager <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Engineering Manager <i class="fa-regular fa-bookmark"></i></div>
-
-            <div class="roadmap-card">Developer Relations <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">BI Analyst <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Network Engineer <i class="fa-regular fa-bookmark"></i></div>
-
-            <div class="roadmap-card new-card">
-                Forward Deployed Engineer
-                <span class="new-badge">New</span>
-            </div>
-
-            <div class="roadmap-card create-roadmap">
-                + Create your own Roadmap
-            </div>
-        </div>
-
-
-        <div class="divider">
-            <span class="section-pill">Skill-based Roadmaps</span>
-        </div>
-        <div class="roadmap-grid">
-            <div class="roadmap-card">Claude Code <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Vibe Coding <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">OpenClaw <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">LeetCode <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Python <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Python for Data Analysis <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Computer Science <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">SQL <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">React <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Vue <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Angular <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">JavaScript <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">TypeScript <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Node.js <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">System Design <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Java <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">ASP.NET Core <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">API Design <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Spring Boot <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Flutter <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">C++ <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Rust <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Go Roadmap <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Design and Architecture <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">GraphQL <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">React Native <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Design System <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Prompt Engineering <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">MongoDB <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Linux <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Kubernetes <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Docker <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">AWS <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Terraform <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Data Structures & Algorithms <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Redis <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Git and GitHub <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">PHP <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Cloudflare <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">AI Red Teaming <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">AI Agents <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Next.js <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Code Review <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Kotlin <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">HTML <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">CSS <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Swift & SwiftUI <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Shell / Bash <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Laravel <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Elasticsearch <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">WordPress <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Django <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Ruby <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Ruby on Rails <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Scala <i class="fa-regular fa-bookmark"></i></div>
-
-            <div class="roadmap-card create-roadmap">+ Create your own Roadmap</div>
-        </div>
-        <div class="divider">
-            <span class="section-pill">Project Ideas</span>
-        </div>
-        <div class="roadmap-grid">
-            <div class="roadmap-card">Frontened <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Backend <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">DevOps<i class="fa-regular fa-bookmark"></i></div>
-        </div>
-        <div class="divider">
-            <span class="section-pill">Best Practices</span>
-        </div>
-        <div class="roadmap-grid">
-            <div class="roadmap-card">AWS <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">API Security <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Backend Performance <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Frontend Performance <i class="fa-regular fa-bookmark"></i></div>
-            <div class="roadmap-card">Code Review <i class="fa-regular fa-bookmark"></i></div>
-        </div>
-    </section></div>
-    <section class="guides-section">
-        <div class="container">
-            <h2>Guides</h2>
-
-            <div class="guide-list">
-
-                <div class="guide-item">
-                    <div class="guide-title">
-                        Python Backend Development: Build Your First API
-                        <span class="badge">NEW · JUNE</span>
-                    </div>
-                    <div class="guide-type">Textual</div>
-                </div>
-
-                <div class="guide-item">
-                    <div class="guide-title">
-                        Python Backend Frameworks: How to Choose the Right One
-                        <span class="badge">NEW · JUNE</span>
-                    </div>
-                    <div class="guide-type">Textual</div>
-                </div>
-
-                <div class="guide-item">
-                    <div class="guide-title">
-                        Python KeyError Exceptions: Causes and Fixes Explained
-                        <span class="badge">NEW · JUNE</span>
-                    </div>
-                    <div class="guide-type">Textual</div>
-                </div>
-
-                <div class="guide-item">
-                    <div class="guide-title">
-                        Python Null (None): Guide to Missing Values and NoneType
-                        <span class="badge">NEW · JUNE</span>
-                    </div>
-                    <div class="guide-type">Textual</div>
-                </div>
-
-                <div class="guide-item">
-                    <div class="guide-title">
-                        Python Return Multiple Values: 4 Methods & Examples
-                        <span class="badge">NEW · JUNE</span>
-                    </div>
-                    <div class="guide-type">Textual</div>
-                </div>
-
-                <div class="guide-item">
-                    <div class="guide-title">
-                        OpenClaw Security: 12 Best Practices From Our Experts
-                    </div>
-                    <div class="guide-type">Textual</div>
-                </div>
-
-                <div class="guide-item">
-                    <div class="guide-title">
-                        Python Multiline Strings: The Complete Guide
-                    </div>
-                    <div class="guide-type">Textual</div>
-                </div>
-
-                <div class="guide-item">
-                    <div class="guide-title">
-                        Top 60+ Angular Interview Questions (and answers)
-                    </div>
-                    <div class="guide-type">Question</div>
-                </div>
-
-                <div class="guide-item">
-                    <div class="guide-title">
-                        Top 60+ Spring Boot Interview Questions and Answers
-                    </div>
-                    <div class="guide-type">Question</div>
-                </div>
-
-                <div class="guide-item">
-                    <div class="guide-title">
-                        Top 50 Kubernetes Interview Questions and Answers
-                    </div>
-                    <div class="guide-type">Question</div>
-                </div>
-
-                <div class="guide-item">
-                    <div class="guide-title">
-                        30 C++ Interview Questions and Answers (+Quiz!)
-                    </div>
-                    <div class="guide-type">Question</div>
-                </div>
-
-                <div class="guide-item">
-                    <div class="guide-title">
-                        Top 30 System Design Interview Questions (+ Quiz!)
-                    </div>
-                    <div class="guide-type">Question</div>
-                </div>
-
-                <div class="guide-item">
-                    <div class="guide-title">
-                        Top 37 REST API Interview Questions (and Answers)
-                    </div>
-                    <div class="guide-type">Question</div>
-                </div>
-
-                <div class="guide-item">
-                    <div class="guide-title">
-                        Top 20 Python Interview Questions and Answers
-                    </div>
-                    <div class="guide-type">Question</div>
-                </div>
-
-            </div>
-
-            <a href="#" class="btn">View All Guides →</a>
         </div>
     </section>
-    <section class="maintenance-section">
-    <div class="maintenance-container">
 
-        <h2 class="maintenance-title">
-            🚀 Actively Maintained
-        </h2>
+</main>
+<section class="roadmap-section">
+    <div class="container roadmap-container">
+        <div class="row g-2">
 
-        <p class="maintenance-text">
-            We are always improving our content, adding new resources and adding
-            features to enhance your learning experience.
-        </p>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <div class="timeline-date">25 May, 2026</div>
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    Network Engineer, Python Guides, Newsletters
-                </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <a href="#" class="roadmap-card">Frontend <i class="bi bi-bookmark"></i></a>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-date">28 Apr, 2026</div>
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    OpenClaw, LeetCode and Newsletters
-                </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <a href="#" class="roadmap-card">Backend <i class="bi bi-bookmark"></i></a>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-date">26 Mar, 2026</div>
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    Scala Roadmap, AI Engineer Review
-                </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <a href="#" class="roadmap-card">Full Stack <i class="bi bi-bookmark"></i></a>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-date">27 Feb, 2026</div>
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    Claude Code, Vibe Coding and AI in Guides
-                </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <a href="#" class="roadmap-card">DevOps <i class="bi bi-bookmark"></i></a>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-date">31 Jan, 2026</div>
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    Ruby, Rails, Django and Reviews
-                </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <a href="#" class="roadmap-card">DevSecOps <i class="bi bi-bookmark"></i></a>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-date">31 Dec, 2025</div>
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    Elasticsearch, WordPress, DevSecOps and AI in Guides
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-date">18 Nov, 2025</div>
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    Swift & SwiftUI, Shell/Bash, Laravel and Feedback Button
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-date">18 Oct, 2025</div>
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    HTML, CSS and livestream session
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-date">23 Sep, 2025</div>
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    Kotlin, NextJS and BI Analyst Roadmaps
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-date">22 Aug, 2025</div>
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    Data Engineering, Machine Learning Roadmap and more.
-                </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <a href="#" class="roadmap-card">Data Analyst <i class="bi bi-bookmark"></i></a>
             </div>
 
         </div>
-
-        <div class="timeline-buttons">
-            <a href="#" class="btn-dark">
-                View Full Changelog
-            </a>
-
-            <a href="#" class="btn-light">
-                🔔 Subscribe for Notifications
-            </a>
-        </div>
-
     </div>
 </section>
-  <footer class="footer">
+   <script src="script.js"></script>
 
-    <!-- Top Navigation -->
-    <div class="footer-nav">
-      <a href="#">Roadmaps</a>
-      <a href="#">Guides</a>
-      <a href="#">FAQs</a>
-      <a href="#">YouTube</a>
-    </div>
-
-    <!-- Main Footer Content -->
-    <div class="footer-content">
-
-      <!-- Left Section -->
-      <div class="footer-left">
-
-        <div class="brand">
-          <div class="logo"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 283 283">
-                    <path fill="#fff"
-                        d="M0 39C0 17.46 17.46 0 39 0h205c21.539 0 39 17.46 39 39v205c0 21.539-17.461 39-39 39H39c-21.54 0-39-17.461-39-39V39Z" />
-                    <path
-                        d="M121.215 210.72c-1.867.56-4.854 1.12-8.96 1.68-3.92.56-8.027.84-12.32.84-4.107 0-7.84-.28-11.2-.84-3.174-.56-5.88-1.68-8.12-3.36s-4.014-3.92-5.32-6.72c-1.12-2.987-1.68-6.813-1.68-11.48v-84c0-4.293.746-7.933 2.24-10.92 1.68-3.173 4.013-5.973 7-8.4s6.626-4.573 10.92-6.44c4.48-2.053 9.24-3.827 14.28-5.32a106.176 106.176 0 0 1 15.68-3.36 95.412 95.412 0 0 1 16.24-1.4c8.96 0 16.053 1.773 21.28 5.32 5.226 3.36 7.84 8.96 7.84 16.8 0 2.613-.374 5.227-1.12 7.84-.747 2.427-1.68 4.667-2.8 6.72a133.1 133.1 0 0 0-12.04.56c-4.107.373-8.12.933-12.04 1.68s-7.654 1.587-11.2 2.52c-3.36.747-6.254 1.68-8.68 2.8v95.48zm45.172-22.4c0-7.84 2.426-14.373 7.28-19.6s11.48-7.84 19.88-7.84 15.026 2.613 19.88 7.84 7.28 11.76 7.28 19.6-2.427 14.373-7.28 19.6-11.48 7.84-19.88 7.84-15.027-2.613-19.88-7.84-7.28-11.76-7.28-19.6z" />
-                </svg></div>
-
-          <div class="brand-text">
-            <h2>roadmap.sh <span>by</span></h2>
-          </div>
-
-          <button class="username">@nilbuild</button>
-        </div>
-
-        <p class="description">
-          Community created roadmaps, best practices, projects,
-          articles, resources and journeys to help you choose your
-          path and grow in your career.
-        </p>
-
-        <div class="footer-links">
-          <span>© roadmap.sh</span>
-          <span>·</span>
-          <a href="#">Terms</a>
-          <span>·</span>
-          <a href="#">Privacy</a>
-          <span>·</span>
-
-          <div class="social-icons">
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-x-twitter"></i>
-            <i class="fab fa-butterfly"></i>
-          </div>
-        </div>
-
-        <button class="cookie-btn">
-          <i class="fa-solid fa-cookie-bite"></i>
-          Cookie Settings
-        </button>
-
-      </div>
-
-      <!-- Right Section -->
-      <div class="footer-right">
-
-        <h1 class="newsstack">
-          <span class="blue">THE</span>
-          <span class="pink">NEW</span>
-          <span class="blue">STACK</span>
-        </h1>
-
-        <p>
-          The top DevOps resource for Kubernetes,
-          cloud-native computing, and large-scale
-          development and deployment.
-        </p>
-
-        <div class="tags">
-          DevOps · Kubernetes · Cloud-Native
-        </div>
-
-      </div>
-
-    </div>
-
-  </footer>
 </body>
 
 </html>
