@@ -1,0 +1,85 @@
+# 🚀 Roadmap.sh Clone
+
+A responsive frontend clone of the popular roadmap.sh website, built using **HTML, CSS, JavaScript, and Bootstrap**. This project was created to improve my frontend development skills by recreating a modern, responsive, and interactive user interface.
+
+## 📌 Features
+
+- Responsive Navigation Bar
+- Custom Dropdown Menus
+- Hero Section
+- Role-Based Roadmaps
+- Skill-Based Roadmaps
+- Project Ideas Section
+- Best Practices Section
+- Guides Section
+- Actively Maintained Timeline
+- Join the Community Section
+- Responsive Footer
+- Smooth Hover Effects & Animations
+- Mobile Friendly Layout
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Bootstrap 5
+- Bootstrap Icons
+
+## 📷 Preview
+
+> Add screenshots of the project here.
+
+## 📁 Project Structure
+
+```
+Roadmap.sh-Clone/
+│
+├── index.html
+├── style.css
+├── script.js
+├── favicon.ico
+└── README.md
+```
+
+## 🎯 Purpose
+
+The purpose of this project was to practice:
+
+- Responsive Web Design
+- Modern UI Development
+- Bootstrap Layout System
+- CSS Flexbox & Grid
+- JavaScript DOM Manipulation
+- Clean Project Structure
+
+## 🚀 Getting Started
+
+1. Clone the repository
+
+```bash
+https://github.com/umerfarooq0320/Roadmap.sh-clone.git
+```
+
+2. Open the project folder
+
+```bash
+cd roadmap-sh-clone
+```
+
+3. Open `index.html` in your browser or use **Live Server**.
+
+## 📌 Note
+
+This project is created **for educational and learning purposes only**. It is a frontend practice project inspired by the original roadmap.sh website and is not affiliated with or endorsed by roadmap.sh.
+
+## 👨‍💻 Author
+
+**Umer Farooq**
+
+- GitHub: https://github.com/your-username
+- LinkedIn: https://linkedin.com/in/your-profile
+
+---
+
+⭐ If you like this project, don't forget to give it a Star!
