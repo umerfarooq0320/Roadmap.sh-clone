@@ -16,8 +16,19 @@ body {
     background: #0f172a;
     padding: 14px 0;
 }
+.nav-container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 110px;
+}
+.navbar{
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
 
-.navbar .container {
+}
+ .container {
     max-width: 1200px;
 }
 /* Logo */
@@ -58,6 +69,7 @@ body {
     outline: none;
     box-shadow: none;
 }
+
 /* Custom Main Dropdown */
 .custom-dropdown-wrapper {
     position: relative;
@@ -274,7 +286,7 @@ body {
 
 .hero-title {
     margin-bottom: 20px;
-    font-size: 64px;
+    font-size: 55px;
     line-height: 1.15;
     font-weight: 800;
     background: linear-gradient(to bottom, #fffbeb, #a855f7);
@@ -287,7 +299,7 @@ body {
     max-width: 980px;
     margin: 0 auto;
     color: #9ca3af;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.75;
 }
 
